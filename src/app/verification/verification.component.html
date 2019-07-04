@@ -1,0 +1,27 @@
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <div class="row text-center">
+              <div class="col-12">
+                <h2 style="color:rgb(49, 49, 49)">
+                  Enter your verification code
+                </h2>
+              </div>
+              <div class="col-12" style="margin-top:2vh">
+                <input #code style="height: 4vh;border-radius: 6px;outline: none" />
+              </div>
+              <div class="col-12" style="margin-top:4vh">
+                <button (click)="verify(code.value)" class="btn btn-primary">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

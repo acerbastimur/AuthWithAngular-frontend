@@ -1,0 +1,62 @@
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center"><b>Sign In</b></h5>
+            <form class="form-signin">
+              <div class="form-label-group">
+                <input
+                  type="email"
+                  id="inputEmail"
+                  class="form-control"
+                  placeholder="Email address"
+                  required
+                  autofocus
+                  [(ngModel)]="email"
+                  name="email"
+                />
+                <label for="inputEmail">Email address</label>
+              </div>
+
+              <div class="form-label-group" style="margin-bottom: 2vh">
+                <input
+                  type="password"
+                  id="inputPassword"
+                  class="form-control"
+                  placeholder="Password"
+                  required
+                  [(ngModel)]="password"
+                  name="password"
+                />
+                <label for="inputPassword">Password</label>
+              </div>
+
+              <button
+                class="btn btn-lg btn-primary btn-block text-uppercase"
+                type="submit"
+                (click)="login()"
+              >
+                Sign in
+              </button>
+              <hr class="my-4" />
+              <a
+                routerLink="/forgetPassword"
+                class="btn btn-lg btn-google btn-block text-uppercase white"
+              >
+                <i class="fab fa-google mr-2"></i> Forgot password ?
+              </a>
+              <a
+                routerLink="/register"
+                class="btn btn-lg btn-facebook btn-block text-uppercase white"
+              >
+                <i class="fab fa-facebook-f mr-2"></i> Sign Up
+              </a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

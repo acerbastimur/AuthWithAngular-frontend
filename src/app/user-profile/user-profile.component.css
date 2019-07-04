@@ -1,0 +1,35 @@
+:root {
+    --input-padding-x: 1.5rem;
+    --input-padding-y: 0.75rem;
+  }
+  
+  body {
+    background: #007bff;
+    background: linear-gradient(
+      to right,
+      #009fff,
+      #ec2f4b
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    animation: fadeIn ease .6s;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+.card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  .white {
+    color: white !important;
+  }
+  

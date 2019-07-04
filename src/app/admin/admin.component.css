@@ -1,0 +1,42 @@
+.white {
+  color: white !important;
+}
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: 0.75rem;
+}
+
+body {
+  background: #007bff;
+  background: linear-gradient(
+    to right,
+    #009fff,
+    #ec2f4b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  animation: fadeIn ease 0.6s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card-signin {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 550px) {
+  p {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}

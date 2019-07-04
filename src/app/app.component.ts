@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import * as firebase from 'firebase/app';
+import { SharedServiceService } from './services/shared-service.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'oguzhanOrhan';
+  constructor(private sharedService:SharedServiceService) {
+  
+  }
 }

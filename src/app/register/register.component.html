@@ -1,0 +1,92 @@
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center"><b>Sign Up</b></h5>
+            <form class="form-signin">
+              <div class="form-label-group">
+                <input
+                  type="email"
+                  id="inputEmail"
+                  class="form-control"
+                  placeholder="Email address"
+                  required
+                  autofocus
+                  [(ngModel)]="user.email"
+                  name="email"
+                />
+                <label for="inputEmail">Email address</label>
+              </div>
+
+              <div class="form-label-group" style="margin-bottom: 2vh">
+                <input
+                  type="password"
+                  id="inputPassword"
+                  class="form-control"
+                  placeholder="Password"
+                  required
+                  [(ngModel)]="user.password"
+                  name="password"
+                />
+                <label for="inputPassword">Password</label>
+              </div>
+              <div class="form-label-group" style="margin-bottom: 2vh">
+                <input
+                  type="password"
+                  id="inputCPassword"
+                  class="form-control"
+                  placeholder="Confirm Password"
+                  required
+                  [(ngModel)]="confirmPassword"
+                  name="confirmPassword"
+                />
+                <label for="inputCPassword">Confirm Password</label>
+              </div>
+              <div class="form-label-group" style="margin-bottom: 2vh">
+                <input
+                  type="text"
+                  id="inputName"
+                  class="form-control"
+                  placeholder="Name"
+                  required
+                  [(ngModel)]="user.name"
+                  name="name"
+                />
+                <label for="inputName">Name</label>
+              </div>
+              <div class="form-label-group" style="margin-bottom: 2vh">
+                <input
+                  type="text"
+                  id="inputSurname"
+                  class="form-control"
+                  placeholder="Surname"
+                  required
+                  [(ngModel)]="user.surname"
+                  name="surname"
+                />
+                <label for="inputSurname">Surname</label>
+              </div>
+              <button
+                class="btn btn-lg btn-primary btn-block text-uppercase"
+                type="submit"
+                (click)="save()"
+              >
+                Save 
+              </button>
+              <hr class="my-4" />
+
+              <a
+                routerLink="/login"
+                class="btn btn-lg btn-facebook btn-block text-uppercase white"
+              >
+                <i class="fab fa-facebook-f mr-2"></i> Sign In
+              </a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
